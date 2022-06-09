@@ -1,10 +1,11 @@
 --liquibase formatted sql
 
 --changeset case:1
-CREATE TABLE SalesOrders2 (
-FinancialCode CHAR(2),
-OrderDate TIMESTAMP,
-ID BIGINT
+CREATE TABLE library_books (
+isbn CHAR(20)      PRIMARY KEY IQ UNIQUE (150000),
+copyright_date     DATE,
+title              CHAR(100),
+author             CHAR(50)
 )
 
---rollback DROP TABLE SalesOrders2;
+--rollback DROP TABLE library_books;
