@@ -27,3 +27,12 @@ author             CHAR(50)
 )
 
 --rollback DROP TABLE test;
+
+--changeset case:4
+CREATE TABLE test2 (
+nombre CHAR(20),
+title              CHAR(100),
+author             CHAR(50)
+)
+
+--rollback DROP TABLE test;
