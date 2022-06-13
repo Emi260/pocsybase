@@ -9,3 +9,13 @@ author             CHAR(50)
 )
 
 --rollback DROP TABLE library_books;
+
+
+--changeset case:2
+CREATE TABLE cuenta (
+nombre CHAR(20),
+title              CHAR(100),
+author             CHAR(50)
+)
+
+--rollback DROP TABLE cuenta;
